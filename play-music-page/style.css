@@ -1,0 +1,29 @@
+:root{--pink:#ff4059;--magenta:#f0006d;--ink:#333;--content:1370px}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink)}
+    body{overflow-x:hidden;background:#fff}
+    .hero{height:56.25vw;max-height:1080px;min-height:390px;background:#f00058 url('img/hero.png') center top/cover no-repeat;position:relative}
+    .hero img{width:100%;height:100%;object-fit:cover;display:block}
+    .section{max-width:var(--content);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:10%;padding:190px 0}
+    .section h2{font-size:clamp(34px,3.7vw,76px);line-height:1.28;margin:0 0 24px;font-weight:700;letter-spacing:.01em}
+    .section h2 .accent{display:block;color:var(--magenta)}
+    .section p,.vibes p{font-size:clamp(16px,1.25vw,24px);line-height:1.75;letter-spacing:.02em;margin:0 0 38px}
+    .button{display:inline-flex;align-items:center;justify-content:center;width:250px;height:70px;border-radius:40px;background:var(--pink);color:#fff;text-decoration:none;font-size:17px}
+    .photo{width:100%;height:740px;object-fit:cover;box-shadow:0 15px 35px #0002}
+    .section.music{padding-top:275px;padding-bottom:260px}
+    .section.louder{grid-template-columns:1fr 1.08fr;gap:12%;padding-top:0;padding-bottom:260px}
+    .section.louder .photo{height:770px}
+    .vibes{min-height:610px;background:linear-gradient(90deg,#f0006d66,#f0006d55),url('img/guitar.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:flex-end;padding:70px max(calc((100vw - var(--content))/2),7%);color:#fff}
+    .vibes article{width:min(590px,50%)}
+    .vibes h2{font-size:clamp(38px,4vw,72px);line-height:1.25;margin:0 0 28px}
+    .vibes p{margin-bottom:34px}
+    footer{min-height:365px;background:linear-gradient(110deg,#ff4059,#ff1764);color:white;padding:85px max(calc((100vw - 1260px)/2),7%) 28px;font-size:15px}
+    .foot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:65px;line-height:2.35}
+    .foot-grid h3{font-size:15px;font-weight:500;margin:0 0 34px}
+    .foot-bottom{border-top:1px solid #ffffff66;margin-top:50px;padding-top:30px;display:flex;justify-content:space-between;font-size:13px}
+    body.stage-inicio .louder,body.stage-inicio .vibes,body.stage-inicio footer{display:none}
+    body.stage-inicio .music{padding-bottom:80px}
+    body.stage-avances footer{display:none}
+    body.stage-avances .vibes{min-height:470px}
+    @media(max-width:1000px){.section{padding:120px 7%;gap:7%}.section.music{padding-top:160px;padding-bottom:150px}.section.louder{padding-bottom:150px}.photo,.section.louder .photo{height:55vw;min-height:340px}.vibes{min-height:500px;padding:60px 7%}.foot-grid{gap:25px}}
+    @media(max-width:650px){.hero{min-height:300px}.section,.section.louder{grid-template-columns:1fr;gap:40px;padding:85px 7%}.section.music{padding-top:95px}.section.louder .photo{order:2}.photo,.section.louder .photo{height:110vw;max-height:620px}.vibes{min-height:540px;justify-content:flex-start;background-position:35% center}.vibes article{width:100%;padding:20px;text-shadow:0 1px 4px #0006}.foot-grid{grid-template-columns:1fr 1fr}.foot-bottom{gap:20px;flex-wrap:wrap}}
