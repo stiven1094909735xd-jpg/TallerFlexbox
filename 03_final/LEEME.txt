@@ -1,6 +1,0 @@
-PLAY MUSIC — FINAL
-
-Abre index.html en cualquier navegador.
-Versión final: diseño completo de principio a fin.
-
-La imagen de referencia incluida conserva el diseño y sus detalles visuales.
